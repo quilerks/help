@@ -1,3 +1,6 @@
+RewriteEngine On
+RewriteBase /
+
 # Rewrite www.example.com -> example.com -- used with SEO Strict URLs plugin
 RewriteCond %{HTTP_HOST} .
 RewriteCond %{HTTP_HOST} ^www.(.*)$ [NC]
