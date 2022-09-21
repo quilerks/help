@@ -12,7 +12,7 @@
 > 
 > Нужно убрать редирект через 443 порт.
 > 
-> (Приложите скриншот из [сервиса показывающего коды ответа сервера](https://bertal.ru/)).
+> (Приложите скриншот например из [сервиса показывающего коды ответа сервера](https://bertal.ru/)).
 > 
 > ![Port 443](./images/port-443.png)
 > 
@@ -53,7 +53,7 @@ Instruction:
 >
 > You need to remove the redirect through port 443.
 >
-> (Attach a screenshot from [service showing server response codes](https://bertal.ru/)).
+> (Attach a screenshot, for example, from [service showing server response codes](https://bertal.ru/)).
 >
 > ![Port 443](./images/port-443.png)
 >
