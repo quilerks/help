@@ -4,3 +4,7 @@ RewriteBase /
 #redirects for page with .html and get parametr page=
 RewriteCond %{QUERY_STRING} (?:^|&)page\=(.*)(?:$|&)
 RewriteRule ^(.*).html$ https://site.com/$1.html? [L,R=301]
+
+#redirects for home page and get parametr page=
+RewriteCond %{QUERY_STRING} (?:^|&)page\=(.*)(?:$|&)
+RewriteRule ^$ https://monamourplus.ru/? [L,R=301]
