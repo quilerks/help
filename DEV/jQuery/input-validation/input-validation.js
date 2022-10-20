@@ -1,5 +1,4 @@
 jQuery(document).ready(function () {
-    console.log('x5');
     jQuery('form input[name="phone"]').on("click keyup change blur input paste", function () {
         let _this = jQuery(this),
             value = _this.val();
