@@ -20,4 +20,34 @@ useradd -d /home/site -s /bin/bash -g www-site site
 usermod -a -G www-site site
 usermod -a -G sudo site
 passwd site
-#password
+#password abcCBA123
+
+#прописываем конфиг для php-fpm
+#не забываем поменять sitenamecom на свой сайт, например onlinerby
+#не забываем поменять site-name.com на свой сайт, например onliner.by
+#так же рекомендую разобраться что за настройки прописываются и скорректировать их под свой сервер и нагрузку проекта
+echo "
+[sitenamecom]
+listen = /run/php/php-sitenamecom.sock
+listen.mode = 0666
+user = site
+group = www-site
+
+php_admin_value[upload_tmp_dir] = /home/site/site-name.com/tmp
+php_admin_value[error_log] = /home/site/site-name.com/www/server-logs/php_errors.log;
+php_admin_value[date.timezone] = Europe/Minsk
+php_admin_value[post_max_size] = 512M
+php_admin_value[upload_max_filesize] = 512M
+php_admin_value[cgi.fix_pathinfo] = 0
+php_admin_value[short_open_tag] = On
+php_admin_value[memory_limit] = 512M
+php_admin_value[session.gc_probability] = 1
+php_admin_value[session.gc_divisor] = 100
+php_admin_value[session.gc_maxlifetime] = 28800;
+
+pm = dynamic
+pm.max_children = 10
+pm.start_servers = 2
+pm.min_spare_servers = 2
+pm.max_spare_servers = 4
+" > /etc/php/7.4/fpm/pool.d/site-name.com.conf
