@@ -201,4 +201,27 @@ nano /etc/cron.d/certbot
 #ручная перегенерация сертификатов в последующем
 certbot renew --nginx
 
+#конфигурирования mysql
+#Открываем файл /etc/mysql/my.cnf и в секции [mysqld] в конце дописываем:
+nano /etc/mysql/my.cnf
 
+[mysqld]
+sql_mode=NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+
+#далее создадим БД для сайта
+mysql
+# Чтобы создать пользователя и БД: Выполнить под root-пользователем mysql
+CREATE DATABASE IF NOT EXISTS change_db_name;
+CREATE USER 'change_db_user'@'localhost' IDENTIFIED BY 'change_db_password';
+GRANT USAGE ON *.* TO 'change_db_user'@'localhost' IDENTIFIED BY 'change_db_password' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;
+GRANT ALL PRIVILEGES ON `change_db_name`.* TO 'change_db_user'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+exit;
+
+#установил mysqltuner для последующих корректировок mysql настроек через /etc/mysql/my.cnf
+apt install -y mysqltuner
+
+#перезагружаем сервисы
+systemctl restart php7.4-fpm
+systemctl restart nginx
+systemctl restart mysql
