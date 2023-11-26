@@ -221,7 +221,57 @@ exit;
 #установил mysqltuner для последующих корректировок mysql настроек через /etc/mysql/my.cnf
 apt install -y mysqltuner
 
+#устанавливаем
+apt install -y zip
+
 #перезагружаем сервисы
 systemctl restart php7.4-fpm
 systemctl restart nginx
 systemctl restart mysql
+
+#бэкапимся на старом серваке еще до настройки текущего, если есть командная строка с необходимыми правами.
+#сперва чистим таблицу сессий. Бывает крайне огромной в десятки ГБ.
+mysql
+#выбираем свою базу
+use db_name;
+#очищаем таблицу сессий. У каждого проекта свой перфикс, не забывайте.
+truncate prefix_session;
+exit;
+
+#создаем архивы на СТАРОМ серваке. need_folder/ - это корневая папка проекта.
+#Может быть www/ или public_html/ или site-name.com/ или другое название
+cd need_folder/
+#удаляем папку кэша. И другие при необходимости
+rm -rf core/cache/
+#создаем дамп базы данных. Я обычно еще использую дату в имени файла, чтобы проще было в последующем идентифицировать
+mysqldump -uuser_db -p db_name > site_name_25112023.sql
+cd ..
+zip -r site_name_25112023.zip site-name.com/ -x "site-name.com/core/cache/*" "site-name.com/add_folder/*"
+#перемещаем для последующего скачивания
+mv site_name_25112023.zip site-name.com/
+
+#выкачиваем файлы сайта и БД (может быть всё в одном архиве) на НОВОМ серваке. Я делаю обычно так.
+cd /home/site/site-name.com/www/
+wget --no-check-certificate -erobots=off https://site-name-two.com/site_name_25112023.zip
+wget --no-check-certificate -erobots=off https://site-name-two.com/site_name_25112023.sql
+
+#далее
+unzip site_name_25112023.zip
+cd site-name.com/
+mv * ../
+mv .* ../
+cd ../
+rm -rf site-name.com/
+cd ../
+chown site:www-site -R www/
+find www/ -type d -exec chmod 755 {} \;
+find www/ -type f -exec chmod 644 {} \;
+cd www/
+
+mysql -uchange_db_user -p change_db_name < site_name_25112023.sql
+
+#не забываем отредактировать конфиги
+nano /home/site/site-name.com/www/config.core.php
+nano /home/site/site-name.com/www/manager/config.core.php
+nano /home/site/site-name.com/www/connectors/config.core.php
+nano /home/site/site-name.com/www/core/config/config.inc.php
