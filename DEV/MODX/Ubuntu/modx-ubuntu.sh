@@ -224,10 +224,27 @@ apt install -y mysqltuner
 #устанавливаем
 apt install -y zip
 
+#редактируем. Я добавляю server-custom.tld
+nano /etc/hostname
+#редактируем: 127.0.0.1 localhost server-custom.tld
+nano /etc/hosts
+#меняем командой
+hostname server-custom.tld
+#устанавливаем
+apt install -y sendmail
+#настраиваем. Все время отвечаем да - Y
+sendmailconfig
+#корректируем. Вставляем это: sendmail_path = /usr/sbin/sendmail -t -i
+nano /etc/php/7.4/fpm/php.ini
+#дальше конечно лучше всего
+
 #перезагружаем сервисы
 systemctl restart php7.4-fpm
 systemctl restart nginx
 systemctl restart mysql
+systemctl restart sendmail
+#а лучше вообще ребутнуть весь сервак
+reboot
 
 #бэкапимся на старом серваке еще до настройки текущего, если есть командная строка с необходимыми правами.
 #сперва чистим таблицу сессий. Бывает крайне огромной в десятки ГБ.
