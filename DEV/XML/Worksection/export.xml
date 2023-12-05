@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account>
+    <projects>
+        <project id="112233">
+            <title>site.com</title>
+            <description></description>
+            <creator id="123455">Менеджер Проекта</creator>
+            <manager id="123456">Юзер Проекта</manager>
+            <maxtime>0</maxtime>
+            <maxmoney>0</maxmoney>
+            <added>Wed, 10 May 2017 09:47:26 +0200</added>
+            <closed></closed>
+            <deadline></deadline>
+            <started></started>
+            <status>active</status>
+            <tasks>
+                <task id="999999" important="1">
+                    <title>Доработки 3</title>
+                    <description>Hi</description>
+                    <creator id="123455">Менеджер Проекта</creator>
+                    <manager id="123455">Менеджер Проекта</manager>
+                    <maxtime>0.0000</maxtime>
+                    <maxmoney>0.00</maxmoney>
+                    <added>Tue, 21 Sep 2021 10:02:30 +0200</added>
+                    <closed></closed>
+                    <deadline></deadline>
+                    <started></started>
+                    <status>active</status>
+                    <mailing>
+                        <member id="123455">Менеджер Проекта</member>
+                    </mailing>
+                    <access>
+                        <member id="123455">Менеджер Проекта</member>
+                    </access>
+                    <comments>
+                        <comment id="24158569">
+                            <description>Hello</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>Sat, 25 Sep 2021 15:08:11 +0200</added>
+                        </comment>
+                    </comments>
+                    <expenses>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-09-21</added>
+                            <time>0:16</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-09-22</added>
+                            <time>2:57</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-10-01</added>
+                            <time>1:34</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-10-06</added>
+                            <time>6:28</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-10-07</added>
+                            <time>4:21</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-10-07</added>
+                            <time>0:35</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-10-08</added>
+                            <time>5:55</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-10-13</added>
+                            <time>3:57</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-10-26</added>
+                            <time>0:10</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-10-26</added>
+                            <time>0:28</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-10-26</added>
+                            <time>0:29</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-10-28</added>
+                            <time>0:20</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-10-29</added>
+                            <time>3:15</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-05</added>
+                            <time>1:01</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-08</added>
+                            <time>0:46</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-08</added>
+                            <time>0:56</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-09</added>
+                            <time>2:00</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-09</added>
+                            <time>2:53</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-10</added>
+                            <time>2:23</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-11</added>
+                            <time>1:00</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-12</added>
+                            <time>0:40</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-12</added>
+                            <time>0:20</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-12</added>
+                            <time>0:20</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-16</added>
+                            <time>0:25</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-16</added>
+                            <time>1:30</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-18</added>
+                            <time>2:30</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-24</added>
+                            <time>1:59</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-25</added>
+                            <time>0:54</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-25</added>
+                            <time>0:12</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-29</added>
+                            <time>0:30</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-29</added>
+                            <time>2:32</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-11-29</added>
+                            <time>0:24</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-12-01</added>
+                            <time>1:00</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-12-01</added>
+                            <time>0:38</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-12-10</added>
+                            <time>0:45</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-12-19</added>
+                            <time>2:30</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-12-20</added>
+                            <time>1:00</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2021-12-20</added>
+                            <time>2:00</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-01-28</added>
+                            <time>1:30</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-01-27</added>
+                            <time>1:30</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-01</added>
+                            <time>0:37</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-13</added>
+                            <time>0:40</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-13</added>
+                            <time>1:00</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-14</added>
+                            <time>1:31</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-15</added>
+                            <time>1:03</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-15</added>
+                            <time>1:30</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-16</added>
+                            <time>0:26</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-17</added>
+                            <time>2:25</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-19</added>
+                            <time>0:56</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-20</added>
+                            <time>1:03</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-21</added>
+                            <time>0:54</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-21</added>
+                            <time>2:03</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-21</added>
+                            <time>0:46</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-22</added>
+                            <time>0:08</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-22</added>
+                            <time>0:24</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-23</added>
+                            <time>1:28</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-25</added>
+                            <time>2:02</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-02-28</added>
+                            <time>1:00</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-03-01</added>
+                            <time>1:13</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-03-03</added>
+                            <time>0:16</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-03-07</added>
+                            <time>2:35</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-03-09</added>
+                            <time>1:15</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-03-10</added>
+                            <time>0:43</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-03-10</added>
+                            <time>1:11</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-03-11</added>
+                            <time>1:07</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-03-23</added>
+                            <time>0:06</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-03-23</added>
+                            <time>1:26</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-03-30</added>
+                            <time>0:39</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-03-30</added>
+                            <time>2:00</time>
+                            <money>0.00</money>
+                            <timer>no</timer>
+                        </expense>
+                        <expense>
+                            <description>Без руководителя</description>
+                            <creator id="123455">Менеджер Проекта</creator>
+                            <added>2022-03-31</added>
+                            <time>4:22</time>
+                            <money>0.00</money>
+                            <timer>yes</timer>
+                        </expense>
+                    </expenses>
+                </task>
+            </tasks>
+        </project>
+    </projects>
+</account>
