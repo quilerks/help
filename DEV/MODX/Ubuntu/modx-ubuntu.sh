@@ -292,3 +292,9 @@ nano /home/site/site-name.com/www/config.core.php
 nano /home/site/site-name.com/www/manager/config.core.php
 nano /home/site/site-name.com/www/connectors/config.core.php
 nano /home/site/site-name.com/www/core/config/config.inc.php
+
+#не будет лишним
+mysqlcheck -A -a
+mysqlcheck -A -c
+mysqlcheck -A -r
+mysqlcheck -A -o
