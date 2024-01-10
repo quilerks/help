@@ -1,7 +1,7 @@
 #Ubuntu 22
 # Обновляем пакеты системы
 apt-get update
-apt-get upgrade
+apt-get -y upgrade
 
 #ставим nginx
 apt install -y nginx
