@@ -108,7 +108,7 @@ server {
     gzip_proxied any;
     gzip_comp_level 9;
     gzip_disable "msie6";
-    gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript application/javascript;
+    gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript application/javascript image/svg+xml;
     add_header Strict-Transport-Security "max-age=31536000;";
     location ~ ^/core/.* {
         deny all;
