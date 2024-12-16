@@ -1,15 +1,12 @@
 #Ubuntu 22
 # Обновляем пакеты системы
-apt-get update
-apt-get -y upgrade
+apt-get update && apt-get -y upgrade
 
 #ставим nginx
 apt install -y nginx
 
 # Установка без указания версии php (можно явно указать у отдельных пакетов php7.4)
-apt install -y software-properties-common
-add-apt-repository ppa:ondrej/php
-apt install -y php7.4-common php7.4-cli php7.4-curl php7.4-json php7.4-gd php7.4-mysql php7.4-xml php7.4-zip php7.4-fpm php7.4-mbstring php7.4-bcmath php7.4-intl php-pear
+apt install -y software-properties-common && add-apt-repository ppa:ondrej/php && apt install -y php7.4-common php7.4-cli php7.4-curl php7.4-json php7.4-gd php7.4-mysql php7.4-xml php7.4-zip php7.4-fpm php7.4-mbstring php7.4-bcmath php7.4-intl php-pear
 
 # Ставим mariadb (он же в прошлом mysql). В инструкции было раньше 10.3 -> 10.6 -> 10.11
 #apt install -y mariadb-server-10.6
@@ -76,8 +73,7 @@ echo "server {
 }" > /etc/nginx/sites-available/00-default.conf
 
 #удаляем стандартные конфиги, может быть default может и default.conf
-rm /etc/nginx/sites-available/default
-rm /etc/nginx/sites-enabled/default
+rm /etc/nginx/sites-available/default && rm /etc/nginx/sites-enabled/default
 
 #делаем символическую ссылку
 ln -s /etc/nginx/sites-available/00-default.conf /etc/nginx/sites-enabled/00-default.conf
@@ -181,10 +177,8 @@ server {
     return 301 https://$host$request_uri;
 }
 
-#Устанавливаем certbot для бесплатных сертификаторв
-apt install -y certbot
-#устанавливаем плагин для certbot
-apt install -y python3-certbot-nginx
+#Устанавливаем certbot для бесплатных сертификаторв. И устанавливаем плагин для certbot
+apt install -y certbot && apt install -y python3-certbot-nginx
 #генерируем сертификаты
 certbot --nginx
 
@@ -240,10 +234,7 @@ nano /etc/php/7.4/fpm/php.ini
 #дальше конечно лучше всего
 
 #перезагружаем сервисы
-systemctl restart php7.4-fpm
-systemctl restart nginx
-systemctl restart mysql
-systemctl restart sendmail
+systemctl restart php7.4-fpm && systemctl restart nginx && systemctl restart mysql && systemctl restart sendmail
 #а лучше вообще ребутнуть весь сервак
 reboot
 
@@ -295,7 +286,4 @@ nano /home/site/site-name.com/www/connectors/config.core.php
 nano /home/site/site-name.com/www/core/config/config.inc.php
 
 #не будет лишним
-mysqlcheck -A -a
-mysqlcheck -A -c
-mysqlcheck -A -r
-mysqlcheck -A -o
+mysqlcheck -A -a && mysqlcheck -A -c && mysqlcheck -A -r && mysqlcheck -A -o
